@@ -24,7 +24,7 @@ const updateNewsList = async fun => {
 };
 
 async function getNewsData() {
-	const base = `http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=4e886e545fbd4e9aa080458903f07645`;
+	const base = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=4e886e545fbd4e9aa080458903f07645`;
 	//const key = '4e886e545fbd4e9aa080458903f07645';
 	const response = await fetch(base);
 	const data = await response.json();
